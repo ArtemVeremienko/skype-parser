@@ -130,6 +130,11 @@
                 padding-bottom: .5rem
             }
 
+            div.message-body {
+                font-family: Roboto, Arial, sans-serif;
+                white-space: pre-wrap
+            }
+
             div.quote:before {
                 display: block;
                 height: 0;
@@ -275,8 +280,7 @@
             }
 
             pre {
-                display: inline;
-                font-family: Roboto, Arial, sans-serif;
+                display: inline
             }
 
             ul.details {
@@ -394,7 +398,7 @@
                             o.appendChild(l);
                             var d = document.createElement("div");
                             d.className = "message-body",                            
-                            d.innerHTML = '<pre>' + u(a[s].content) + '</pre>', //innerText replaced
+                            d.innerHTML = u(a[s].content), //innerText replaced
                             r.appendChild(d),
                             n.appendChild(r)
                         }
