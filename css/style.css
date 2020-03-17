@@ -121,7 +121,7 @@ h1.conversations {
     position: static;
     margin-bottom: 0;
     padding-left: 7rem;
-    background: url(skype.svg) 1rem 1rem no-repeat;
+    background: url(../skype.svg) 1rem 1rem no-repeat;
     margin-bottom: 0
 }
 
