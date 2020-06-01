@@ -28,13 +28,13 @@
         var d = document.createElement("div");
         d.className = "message-body";
         if (a[s].content.includes('Picture')) {
-          var re = /0.*?"/;
-          var src = a[s].content.match(re)[0].slice(0, -1);
-          var ret = /(png|PNG)|(gif|GIF)|(jpg|JPG)/;
+          var re = /0[a-z0-9-]*/;
+          var src = a[s].content.match(re)[0];
+          var ret = /png|gif|jpg/i;
           var type = a[s].content.match(ret)[0];
           var b = document.createElement('img');
           b.className = 'message-image';
-          b.setAttribute('src', 'media/' + src + '.1.' + type);
+          b.setAttribute('src', `media/${src}.1.${type}`);
           d.appendChild(b);
         } else {
           d.innerHTML = u(a[s].content); //innerText replaced
