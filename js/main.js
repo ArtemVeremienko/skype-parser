@@ -28,7 +28,7 @@
         var d = document.createElement("div");
         d.className = "message-body";
         if (a[s].content.includes('Picture')) {
-          var re = /0[a-z0-9-]*/;
+          var re = /0[\w-]*/;
           var src = a[s].content.match(re)[0];
           var ret = /png|gif|jpg/i;
           var type = a[s].content.match(ret)[0];
