@@ -8,6 +8,7 @@
 @font-face {
     font-family: "Segoe UI Local";
     font-weight: 400;
+    font-display: swap;
     src: local("Segoe UI")
 }
 
@@ -21,6 +22,7 @@
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
+    font-display: swap;
     src: url('fonts/roboto-v20-cyrillic-ext_latin_cyrillic-regular.eot');
     /* IE9 Compat Modes */
     src: local('Roboto'), local('Roboto-Regular'),

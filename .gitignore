@@ -1,2 +1,5 @@
 /media
+/build
 messages.json
+node_modules
+package-lock.json
