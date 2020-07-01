@@ -30,7 +30,7 @@
         if (a[s].content.includes('Picture')) {
           var re = /0[\w-]*/;
           var src = a[s].content.match(re)[0];
-          var ret = /png|gif|jpg/i;
+          var ret = /png|gif|jpe?g/i;
           var type = a[s].content.match(ret)[0];
           var b = document.createElement('img');
           b.className = 'message-image';
