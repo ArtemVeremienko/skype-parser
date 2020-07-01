@@ -1,0 +1,38 @@
+{
+  "name": "skype-parser",
+  "version": "1.0.0",
+  "private": "true",
+  "description": "My solution to the tag parsing problem",
+  "type": "module",
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArtemVeremienko/skype-parser.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ArtemVeremienko/skype-parser/issues"
+  },
+  "homepage": "https://github.com/ArtemVeremienko/skype-parser#readme",
+  "devDependencies": {
+    "@babel/core": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "autoprefixer": "^9.8.4",
+    "browser-sync": "^2.26.7",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-terser": "^1.2.0",
+    "postcss-csso": "^4.0.0"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "not dead",
+    "not ie <= 11",
+    "iOS >= 12"
+  ]
+}
