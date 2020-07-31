@@ -2,7 +2,13 @@
 My solution to the tag parsing problem
 
 ## TL;DR
-Clone this repository and put inside your `media` folder and `messages.json` file, from skype export archive ([How to export?](https://support.skype.com/en/faq/FA34894/how-do-i-export-my-skype-files-and-chat-history)). Open `index.html` and select your `messages.json`.
+1. Download last [release](https://github.com/ArtemVeremienko/skype-parser/releases)
+2. Unzip archive in your directory
+3. Put your data files: `messages.json` and `media` folder into your directory
+4. Start index.html
+5. Choose your `messages.json` file
+6. Press Load
+7. Enjoy 😊
 
 ## Description
 I downloaded viewer for my export history from [official site](https://support.skype.com/en/faq/FA34894/how-do-i-export-my-skype-files-and-chat-history) aka Skype-parser.
