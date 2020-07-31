@@ -2,7 +2,7 @@
 My solution to the tag parsing problem
 
 ## TL;DR
-1. Download `skype-parser.zip` from last [release](https://github.com/ArtemVeremienko/skype-parser/releases)
+1. Download `skype-parser.zip` from latest [release](https://github.com/ArtemVeremienko/skype-parser/releases)
 2. Unzip archive in your directory
 3. Put your data files: `messages.json` and `media` folder into your directory
 4. Start index.html
