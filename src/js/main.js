@@ -28,16 +28,16 @@
         var d = document.createElement("div");
         d.className = "message-body";
         if (a[s].content.includes('Picture')) {
-          var re = /0[\w-]*/;
-          var src = a[s].content.match(re)[0];
-          var ret = /png|gif|jpe?g/i;
-          var type = a[s].content.match(ret)[0];
-          var b = document.createElement('img');
+          const re = /0[\w-]*/i;
+          const src = a[s].content.match(re) || [];
+          const ret = /png|gif|jpe?g|heic|tiff?|bmp|eps|raw/i;
+          const type = a[s].content.match(ret) || [];
+          const b = document.createElement('img');
           b.className = 'message-image';
-          b.setAttribute('src', `media/${src}.1.${type}`);
+          b.src = `media/${src[0]}.1.${type[0]}`;
           d.appendChild(b);
         } else {
-          d.innerHTML = u(a[s].content); //innerText replaced
+          d.innerHTML = u(a[s].content);
         }
 
         r.appendChild(d),
